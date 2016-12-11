@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 
 import App from './components/App'
+import Homepage from './components/Homepage/Homepage'
 import { reducer } from './state/reducer'
 
 import './index.css'
@@ -18,6 +19,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App} />
+      <Route path="/home" component={Homepage} />
     </Router>
   </Provider>,
   document.getElementById('root')
