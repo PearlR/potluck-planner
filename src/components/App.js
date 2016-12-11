@@ -1,7 +1,9 @@
 import React from 'react'
 
+import Welcome from './Welcome/Welcome'
+
 const App = () => {
-  return <h1>Potluck Planner</h1>
+  return <Welcome />
 }
 
 export default App
