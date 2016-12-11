@@ -26,5 +26,6 @@ Potluck planner is an app that helps to solve the issue of co-ordinating who is 
 - React Router Redux
 - Redux
 - Ramda
-- Enzyme
+- Webpack
+- Jest
 - ES6, immutable, pure, functional programming
