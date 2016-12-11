@@ -6,6 +6,7 @@ import { Router, Route, browserHistory } from 'react-router'
 
 import App from './components/App'
 import Homepage from './components/Homepage/Homepage'
+import Login from './components/Login/Login'
 import { reducer } from './state/reducer'
 
 import './index.css'
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={App} />
       <Route path="/home" component={Homepage} />
+      <Route path="/login" component={Login} />
     </Router>
   </Provider>,
   document.getElementById('root')
