@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Welcome from './Welcome/Welcome'
+import Homepage from './Homepage/Homepage'
 
 const App = () => {
-  return <Welcome />
+  return <Homepage />
 }
 
 export default App

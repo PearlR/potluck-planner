@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Login = () => {
-  return <h1>Login</h1>
+  return <Link to="success">Login</Link>
 }
 
 export default Login
