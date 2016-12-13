@@ -4,6 +4,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 
+import AllEvents from './components/AllEvents/AllEvents'
 import App from './components/App'
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import DetailsEvent from './components/DetailsEvent/DetailsEvent'
@@ -34,6 +35,7 @@ ReactDOM.render(
       <Route path="/invites" component={InvitesEvent} />
       <Route path="/menu" component={MenuEvent} />
       <Route path="/single-event" component={SingleEvent} />
+      <Route path="/all-events" component={AllEvents} />
     </Router>
   </Provider>,
   document.getElementById('root')
