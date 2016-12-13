@@ -11,6 +11,7 @@ import Homepage from './components/Homepage/Homepage'
 import InvitesEvent from './components/InvitesEvent/InvitesEvent'
 import Login from './components/Login/Login'
 import LoginSuccess from './components/LoginSuccess/LoginSuccess'
+import MenuEvent from './components/MenuEvent/MenuEvent'
 import { reducer } from './state/reducer'
 
 import './index.css'
@@ -30,6 +31,7 @@ ReactDOM.render(
       <Route path="/create-event" component={CreateEvent} />
       <Route path="/event-details" component={DetailsEvent} />
       <Route path="/invites" component={InvitesEvent} />
+      <Route path="/menu" component={MenuEvent} />
     </Router>
   </Provider>,
   document.getElementById('root')
