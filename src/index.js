@@ -6,6 +6,7 @@ import { Router, Route, browserHistory } from 'react-router'
 
 import App from './components/App'
 import CreateEvent from './components/CreateEvent/CreateEvent'
+import DetailsEvent from './components/DetailsEvent/DetailsEvent'
 import Homepage from './components/Homepage/Homepage'
 import Login from './components/Login/Login'
 import LoginSuccess from './components/LoginSuccess/LoginSuccess'
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/login" component={Login} />
       <Route path="/success" component={LoginSuccess} />
       <Route path="/create-event" component={CreateEvent} />
+      <Route path="/event-details" component={DetailsEvent} />
     </Router>
   </Provider>,
   document.getElementById('root')
