@@ -12,6 +12,7 @@ import InvitesEvent from './components/InvitesEvent/InvitesEvent'
 import Login from './components/Login/Login'
 import LoginSuccess from './components/LoginSuccess/LoginSuccess'
 import MenuEvent from './components/MenuEvent/MenuEvent'
+import SingleEvent from './components/SingleEvent/SingleEvent'
 import { reducer } from './state/reducer'
 
 import './index.css'
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/event-details" component={DetailsEvent} />
       <Route path="/invites" component={InvitesEvent} />
       <Route path="/menu" component={MenuEvent} />
+      <Route path="/single-event" component={SingleEvent} />
     </Router>
   </Provider>,
   document.getElementById('root')
