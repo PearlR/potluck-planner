@@ -6,6 +6,7 @@ const Homepage = () => {
     <h1>Potluck Planner</h1>
     <h1>homepage</h1>
     <Link to="login">Login</Link>
+    <Link to="signin">Sign In</Link>
   </div>
 }
 

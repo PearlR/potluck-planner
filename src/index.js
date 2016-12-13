@@ -5,9 +5,10 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 
 import App from './components/App'
+import CreateEvent from './components/CreateEvent/CreateEvent'
 import Homepage from './components/Homepage/Homepage'
 import Login from './components/Login/Login'
-import LoginSucess from './components/Login-Success/LoginSuccess'
+import LoginSuccess from './components/LoginSuccess/LoginSuccess'
 import { reducer } from './state/reducer'
 
 import './index.css'
@@ -23,7 +24,8 @@ ReactDOM.render(
       <Route path="/" component={App} />
       <Route path="/home" component={Homepage} />
       <Route path="/login" component={Login} />
-      <Route path="/success" component={LoginSucess} />
+      <Route path="/success" component={LoginSuccess} />
+      <Route path="/create-event" component={CreateEvent} />
     </Router>
   </Provider>,
   document.getElementById('root')
