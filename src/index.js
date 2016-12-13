@@ -8,6 +8,7 @@ import App from './components/App'
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import DetailsEvent from './components/DetailsEvent/DetailsEvent'
 import Homepage from './components/Homepage/Homepage'
+import InvitesEvent from './components/InvitesEvent/InvitesEvent'
 import Login from './components/Login/Login'
 import LoginSuccess from './components/LoginSuccess/LoginSuccess'
 import { reducer } from './state/reducer'
@@ -28,6 +29,7 @@ ReactDOM.render(
       <Route path="/success" component={LoginSuccess} />
       <Route path="/create-event" component={CreateEvent} />
       <Route path="/event-details" component={DetailsEvent} />
+      <Route path="/invites" component={InvitesEvent} />
     </Router>
   </Provider>,
   document.getElementById('root')
