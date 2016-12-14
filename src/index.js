@@ -14,7 +14,7 @@ import Login from './components/Login/Login'
 import LoginSuccess from './components/LoginSuccess/LoginSuccess'
 import MenuEvent from './components/MenuEvent/MenuEvent'
 import SingleEvent from './components/SingleEvent/SingleEvent'
-import { reducer } from './state/reducer'
+import reducer from './state/reducer'
 
 import './index.css'
 
