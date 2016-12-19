@@ -1,7 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import { Button, ButtonGroup, FormGroup, FormControl } from 'react-bootstrap'
+import {
+  Button,
+  ButtonGroup,
+  FormGroup,
+  FormControl,
+} from 'react-bootstrap'
 
 import { updateField, NAME } from '../../state/createEvent/actions'
 

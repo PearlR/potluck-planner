@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import {
   Button,
@@ -7,14 +8,18 @@ import {
   FormControl,
 } from 'react-bootstrap'
 
-const DetailsEvent = () => {
+import { updateField, NAME } from '../../state/detailsEvent/actions'
+
+const DetailsEvent = props => {
+  const { date, description, loc, time, handleChange } = props
+
   return <div>
     <FormGroup>
     <h1>Important Details</h1>
-      <FormControl type='text' name='date' placeholder='date' />
-      <FormControl type='text' name='time' placeholder='time' />
-      <FormControl type='text' name='location' placeholder='location' />
-      <FormControl componentClass='textarea' name='description' placeholder='description' />
+      <FormControl type='text' name='date' placeholder='date' value={date} onChange={handleChange} />
+      <FormControl type='text' name='time' placeholder='time' value={time} onChange={handleChange} />
+      <FormControl type='text' name='location' placeholder='location' value={loc} onChange={handleChange} />
+      <FormControl componentClass='textarea' name='description' placeholder='description' value={description} onChange={handleChange} />
       <ButtonGroup>
         <Button><Link to='/invites'>Next</Link></Button>
       </ButtonGroup>
@@ -22,4 +27,14 @@ const DetailsEvent = () => {
   </div>
 }
 
-export default DetailsEvent
+const mapStateToProps = state => {
+  return state[NAME] || {}
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    handleChange: event => dispatch(updateField(event.target.name, event.target.value)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DetailsEvent)
