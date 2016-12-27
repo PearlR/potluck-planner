@@ -11,7 +11,7 @@ import {
 import { updateField, NAME } from '../../state/detailsEvent/actions'
 
 const DetailsEvent = props => {
-  const { date, description, loc, time, handleChange } = props
+  const { date, description, handleChange, loc, time } = props
 
   return <div>
     <FormGroup>
